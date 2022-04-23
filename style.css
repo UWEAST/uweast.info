@@ -26,7 +26,7 @@ body {
     margin-bottom: -2em;
     margin-top: -2em;
     width: 15.625rem;
-    height: 15.625rem;
+    /* height: 15.625rem; */
     filter:saturate(100%);
 }
 
@@ -37,13 +37,13 @@ h1 {
     margin-right: auto;
     margin-top: 0.625rem;
     color: var(--primary-color);
-    line-height: 2.5rem;
+    line-height: 1.5;
 }
 
 #uweastlogo {
     width: 5rem;
-    height: 5rem;
-    margin-top: -1.125rem;
+    /* height: 5rem; */
+    margin-top: -0.7rem;
     margin-bottom: -0.75rem;
 }
 
@@ -79,33 +79,6 @@ main {
     
 }
 
-@media(min-width:750px) {
-    main {
-        min-width: 22rem;
-    }
-    .container1 {
-        display: flex;
-        flex-direction: row; 
-    }    
-}
-
-a {
-    display: flex;
-    flex-direction: column;
-    background: none;
-    color: var(--primary-color);
-    border: 0.125rem solid;
-    font-size: 1em;
-    transition: all 0.30s;
-    margin-bottom: 2em;
-    width: 6.563rem;
-    height: 6.563rem;
-    border-radius: 1.125rem;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;    
-}
-
 .pics {
     width: 3.125rem;
     height: 3.125rem;
@@ -128,6 +101,89 @@ a {
     margin-bottom: -0.625rem;
     margin-top: -0.5rem;
 }
+
+a {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    color: var(--primary-color);
+    border: 0.125rem solid;
+    font-size: 1em;
+    transition: all 0.30s;
+    margin-bottom: 2em;
+    width: 6.563rem;
+    height: 6.563rem;
+    border-radius: 1.125rem;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;    
+}
+
+/* old laptop to 1080p */
+@media(min-width:720px) {
+    main {
+        min-width: 22rem;
+        padding: -1rem;
+        margin: -1rem;
+    }
+    .container1 {
+        display: flex;
+        flex-direction: row; 
+    }    
+    #biglogo {
+        width: 15rem; 
+    }
+    h1 {
+        line-height: 1.2;
+        font-size: 2rem;
+    }
+    .pics {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+    #paypal {
+        width: 2.9rem;
+        height: 2.9rem;
+    }
+    #volunteer {
+        width: 3.4rem; 
+        height: 3.4rem;
+    } 
+    #contact {
+        width: 4.3rem;
+        height: 4.3rem;
+        margin-bottom: -0.625rem;
+        margin-top: -0.5rem;
+    }
+    a {
+        margin-bottom: 1rem; 
+        font-size: 0.9em;
+        width: 5.7rem;
+        height: 5.7rem; 
+    }
+    body {
+        min-height: 97.16vh;
+    }
+}
+
+/* ultra wide screens */
+@media(min-width:1440px) {
+    #biglogo {
+        width: 15rem; 
+    }
+    main {
+        min-width: 22rem;
+        min-height: 4rem;
+    }
+    h1 {
+        line-height: 1.2;
+        font-size: 2rem; 
+    }
+    body {
+        min-height: 97.16vh;
+    }
+}
+
 
 a:hover {
     border-color: blanchedalmond;
